@@ -19,7 +19,7 @@ export default function MobileClinicScreen() {
   const [notes, setNotes] = useState('');
 
   const handleConfirmBooking = () => {
-    alert(`Booking confirmed for ${nextVisitDate} at ${selectedTime}`);
+    alert(`Booking confirmed for ${nextVisitDate}`);
   };
 
   return (
@@ -77,7 +77,7 @@ export default function MobileClinicScreen() {
       <Button
         title="Confirm Booking"
         onPress={handleConfirmBooking}
-        disabled={!selectedTime || !serviceType}
+        disabled={!serviceType}
       />
     </View>
   );
