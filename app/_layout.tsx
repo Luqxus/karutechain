@@ -17,7 +17,7 @@ import {
 
 import { createStackNavigator } from "@react-navigation/stack";
 import TabLayout from "./(tabs)/_layout";
-import StatDetailScreen from "./stat_detail";
+import StatDetailScreen from "./stat_details";
 
 SplashScreen.preventAutoHideAsync();
 

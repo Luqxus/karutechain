@@ -16,7 +16,7 @@ const HeartRate = (props: { height: number; width: number; imageSrc: any }) => {
     >
       <TouchableOpacity
         onPress={() => {
-          // navigation.navigate("stat_detail");
+          navigation.navigate("stat_details");
         }}
       >
         <ImageBackground
