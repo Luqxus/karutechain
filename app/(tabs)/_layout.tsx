@@ -6,6 +6,7 @@ import { Colors } from "@/constants/Colors";
 // Import your screens
 import HomeScreen from "./index";
 import ExploreScreen from "./explore";
+import MobileClinicScreen from "./mobileclinic";
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -26,11 +27,18 @@ export default function TabLayout() {
       focusedIcon: "code",
       unfocusedIcon: "code-outline",
     },
+    {
+      key: "mobileclinic",
+      title: "Mobile Clinic",
+      focusedIcon: "home",
+      unfocusedIcon: "home",
+    }
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
     home: HomeScreen,
     explore: ExploreScreen,
+    mobileclinic: MobileClinicScreen,
   });
 
   return (
